@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-    <link href="./output.css" rel="stylesheet" />
-    <link href="../build/css/style.css" rel="stylesheet" />
-    <link href="./lightbox.css" rel="stylesheet" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link href="build/css/style.css" rel="stylesheet" />
+    <link href="./src/lightbox.css" rel="stylesheet" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -905,12 +905,12 @@
         if (cartToggle) {
 
           cartToggle = 0;
-          cart.classList=`border-2 flex flex-col font-main border-orange-400 absolute bg-white top-28 p-4 gap-5 left-20 z-20`;
+          cart.classList=`border-2 xs:hidden flex flex-col font-main border-orange-400 absolute bg-white top-28 p-4 gap-5 left-20 z-20`;
         }
         
         else {
           cartToggle = 1;
-          cart.classList=`border-2 flex flex-col font-main border-orange-400 absolute bg-white top-28 p-4 gap-5 -z-20`;
+          cart.classList=`border-2 xs:hidden flex flex-col font-main border-orange-400 absolute bg-white top-28 p-4 gap-5 -z-20`;
         }
       };
       menuButton.onclick = function () {
@@ -996,6 +996,6 @@
         }
       };
     </script>
-    <script src="../src/lightbox-plus-jquery.js"></script>
+    <script src="./src/lightbox-plus-jquery.js"></script>
   </body>
 </html>
