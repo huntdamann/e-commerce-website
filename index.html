@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <link href="./src/output.css" rel="stylesheet" />
-    <link href="build/css/style.css" rel="stylesheet" />
+    <link href="./build/css/style.css" rel="stylesheet" />
     <link href="./src/lightbox.css" rel="stylesheet" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -150,7 +150,7 @@
         </div>
       </div>
       <div
-        class="hidden xs:hidden xs:flex-row absolute px-0.5 gap-7 bg-orange-400 max-h-fit xs:h-1 xs:bg-white xs:left-52 top-0"
+        class="transition-all duration-500 transform -translate-x-full z-50 xs:hidden xs:flex-row fixed px-0.5 gap-7 bg-orange-400 max-h-fit xs:h-1 xs:bg-white xs:left-52 top-0"
         id="side-nav"
       >
         <a onclick="" href="" id="exit" class="md:hidden">
@@ -562,54 +562,54 @@
       nextButton.onclick = function () {
         if (currentImage == 4) {
           currentImage = 1;
-          image.src = `/images/image-product-${currentImage}.jpg`;
+          image.src = `./images/image-product-${currentImage}.jpg`;
         } else {
           currentImage += 1;
-          image.src = `/images/image-product-${currentImage}.jpg`;
+          image.src = `./images/image-product-${currentImage}.jpg`;
         }
-        lightBox.href = `/images/image-product-${currentImage}-thumbnail.jpg`;
+        lightBox.href = `./images/image-product-${currentImage}-thumbnail.jpg`;
       };
       prevButton.onclick = function () {
         if (currentImage == 1) {
           currentImage = 4;
-          image.src = `/images/image-product-${currentImage}.jpg`;
+          image.src = `./images/image-product-${currentImage}.jpg`;
         } else {
           currentImage -= 1;
-          image.src = `/images/image-product-${currentImage}.jpg`;
+          image.src = `./images/image-product-${currentImage}.jpg`;
         }
-        lightBox.href = `/images/image-product-${currentImage}-thumbnail.jpg`;
+        lightBox.href = `./images/image-product-${currentImage}-thumbnail.jpg`;
       };
       thumbnailContainer1.onclick = function () {
-        image.src = `/images/image-product-1.jpg`;
+        image.src = `./images/image-product-1.jpg`;
         thumbnailContainer1.classList = `border  w-24 h-24 rounded-xl opacity-50`;
         thumbnailContainer2.classList = `border  w-24 h-24 rounded-xl`;
         thumbnailContainer3.classList = `border  w-24 h-24 rounded-xl`;
         thumbnailContainer4.classList = `border  w-24 h-24 rounded-xl`;
-        lightBox.href = `/images/image-product-1-thumbnail.jpg`;
+        lightBox.href = `./images/image-product-1-thumbnail.jpg`;
       };
       thumbnailContainer2.onclick = function () {
-        image.src = `/images/image-product-2.jpg`;
+        image.src = `./images/image-product-2.jpg`;
         thumbnailContainer2.classList = `border  w-24 h-24 rounded-xl opacity-50`;
         thumbnailContainer1.classList = `border  w-24 h-24 rounded-xl`;
         thumbnailContainer3.classList = `border  w-24 h-24 rounded-xl`;
         thumbnailContainer4.classList = `border  w-24 h-24 rounded-xl`;
-        lightBox.href = `/images/image-product-2-thumbnail.jpg`;
+        lightBox.href = `./images/image-product-2-thumbnail.jpg`;
       };
       thumbnailContainer3.onclick = function () {
-        image.src = `/images/image-product-3.jpg`;
+        image.src = `./images/image-product-3.jpg`;
         thumbnailContainer3.classList = `border  w-24 h-24 rounded-xl opacity-50`;
         thumbnailContainer1.classList = `border  w-24 h-24 rounded-xl`;
         thumbnailContainer2.classList = `border  w-24 h-24 rounded-xl`;
         thumbnailContainer4.classList = `border  w-24 h-24 rounded-xl`;
-        lightBox.href = `/images/image-product-3-thumbnail.jpg`;
+        lightBox.href = `./images/image-product-3-thumbnail.jpg`;
       };
       thumbnailContainer4.onclick = function () {
-        image.src = `/images/image-product-4.jpg`;
+        image.src = `./images/image-product-4.jpg`;
         thumbnailContainer4.classList = `border  w-24 h-24 rounded-xl opacity-50`;
         thumbnailContainer2.classList = `border  w-24 h-24 rounded-xl`;
         thumbnailContainer3.classList = `border  w-24 h-24 rounded-xl`;
         thumbnailContainer1.classList = `border  w-24 h-24 rounded-xl`;
-        lightBox.href = `/images/image-product-4-thumbnail.jpg`;
+        lightBox.href = `./images/image-product-4-thumbnail.jpg`;
       };
 
       addToCart.onclick = function () {
