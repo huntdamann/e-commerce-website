@@ -27,366 +27,6 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      /*
-   
-   * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    "flex font-serif flex-col md:flex-row lg:flex-row gap-3 lg:gap-32 p-16 lg:justify-center"
-    body {
-      font-family: 'Kumbh Sans', sans-serif;
-    }
-    .grid {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      margin-top: 20px;
-      
-      margin-inline: 1rem;
-
-    }
-    .topbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      width: 100%;
-      position: absolute;
-      
-      min-height: 50px;
-    }
-    .icon-0 {
-
-      position: relative;
-      top: -20px;
-      
-     
-    }
-    .icon-1 {
-      
-      position: relative;
-      top: -20px;
-      
-   
-    }
-    .pic {
-      
-      max-width: 40px;
-      margin-right: 15px;
-      position: relative;
-      top: -20px;
-      
-    }
-    .pic-container {
-
-      max-height: 15rem;
-      display: flex;
-      max-width: 600px;
-      position: relative;
-      top: 40px;
-  
-    }
-  
-    .image {
-      max-width: 100%;
-      max-height: 100%;
-    }
-    .company-name-container {
-
-    
-      padding-left: 1rem;
-      margin-top: 40px;
-    }
-    .company-name {
-      color: hsl(26, 100%, 55%);
-      font-size: 15px;
-      font-family: 'Kumbh Sans', sans-serif;
-      letter-spacing: 2px;
-    }
-    .sneaker-type-container {
-
-      max-width: 400px;
-      
-      padding-left: 1rem;
-    }
-    .sneaker-type {
-      line-height: 1;
-
-    }
-    .sneaker-description-container {
-
-      color: hsl(219, 9%, 45%);
-      line-height: 1.5;
-     
-      max-width: 375px;
-      padding-left: 1rem;
-    }
-    .pricing-info-container {
-
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-   
-    .discount {
-
-      border: none;
-      border-radius: 5px;
-      min-width: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: hsl(25, 100%, 94%);
-      color: hsl(26, 100%, 55%);
-      position: absolute;
-      left: 10rem;
-    }
-    .before-discount {
-      color: hsl(220, 14%, 75%);
-      font-weight: 600;
-    }
-    .quantity-scroll-container {
-      
-      max-width: 430px;
-      position: relative;
-      left: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      min-height: 50px;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      background-color: hsl(223, 64%, 98%);
-      border-radius: 5px;
-    }
-    .add-cart-container {
-      border: none;
-      max-width: 330px;
-      display: flex;
-      position: relative;
-      left: 10px;
-      border-radius: 5px;
-      background-color: hsl(26, 100%, 55%);
-    }
-    .add-cart:hover {
-      cursor: pointer;
-      background-color: hsl(219, 9%, 45%);
-    }
-    .add-cart {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      min-height: 50px;
-      background-color: hsl(26, 100%, 55%);
-      border: none;
-      border-radius: 5px;
-      color: white;
-      gap: 10px;
-    }
-    .arrow-left {
-
-      position: relative;
-      top: 7px;
-      right: 2px;
-  
-    }
-    .arrow-right {
-
-      position: relative;
-      top: 7px;
-      left: 2px;
-    }
-    .arrow-left-container {
-      z-index: 999;
-      background-color: white;
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      border-radius: 100%;
-      min-width: 2rem;
-      min-height: 2rem;
-      justify-items: center;
-      align-items: center;
-      top: 200px;
-      left: 15px;
-
-    }
-    .arrow-right-container {
-
-      z-index: 999;
-      background-color: white;
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      border-radius: 100%;
-      min-width: 2rem;
-      min-height: 2rem;
-      justify-items: center;
-      align-items: center;
-      right: 15px;
-      top: 200px;
-      border: none;
-
-    }
-    .arrow-right-container:hover {
-
-      cursor: pointer;
-    }
-    .arrow-left-container:hover {
-      cursor: pointer;
-    }
-    .light-box {
-      position: absolute;
-  
-      right: 2rem;
-      max-width: 300px;
-      border-radius: 1rem;
-      top: 80px;
-      display: none;
-      flex-direction: column;
-      background-color: white;
-      
-      
-    }
-    .counter-minus {
-      border: none;
-      background-color: none;
-    }
-    .counter-plus {
-      border: none;
-    }
-    .counter-minus:hover {
-      cursor: pointer;
-    }
-    .counter-plus:hover {
-      cursor: pointer;
-    }
-    .number {
-      font-weight: 600;
-    }
-    .cart {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      top: -20px;
-      
-      
-    }
-    .cart-item-number {
-      background-color: orange;
-      border-radius: 50%;
-      min-height: 10px;
-      min-width: 20px;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      left: 275px;
-      top: 5px;
-      
-    }
-    .cart:hover{
-      cursor: pointer;
-    }
-    .cart-text {
-
-      
-      min-height: 60px;  
-  
-    }
-    
-    .cart-pricing {
-
-     
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 1rem;
-      gap: 1rem;
-    }
-    .total-price {
-      font-weight: 600;
-      position: relative;
-      margin-left: 3px;
-    }
-    .thumbnail-container {
-   
-      max-width: 55px;
-      max-height: 150px;
-    }
-    .thumbnail {
-      width: 100%;
-      height: 100%;
-    }
-    .d {
-      max-width: 250px;
-      
-      position: inherit;
-    }
-    .info {
-      border: 1px red solid;
-      min-width: 200px;
-    }
-    .checkout {
-      background-color:hsl(26, 100%, 55%) ;
-      border: none;
-      min-height: 50px;
-      max-width: 200px;
-      position: relative;
-      left: 50px;
-      margin-bottom: 20px;
-      border-radius: 1rem;
-      color: white;
-      font-family: 'Kumbh Sans', sans-serif;
-    }
-    .checkout:hover {
-      cursor: pointer;
-    }
-    .trash:hover {
-      cursor: pointer;
-    }
-    .trash {
-      position: absolute;
-      right: 30px;
-      
-    }
-    .cart-btn {
-      background-color: white;
-      border: none;
-      position: relative;
-      left: 20px;
-    }
-    .cart-btn:hover {
-      cursor: pointer;
-    }
-    @media (min-width: 375px) {
-
-      .grid {
-      display: flex;
-      flex-direction: column;
-     
-      margin-top: 20px;
-      
-      
-
-    }
-
-    .topbar {
-      display: flex;
-      justify-content: space-evenly;
-      width: 100%;
-      border: 1px red solid;
-      
-      min-height: 50px;
-    }
-  }
-*/
-
       * {
         margin: 0;
         padding: 0;
@@ -505,7 +145,7 @@
             >0</span
           >
           <div class="w-9" id="avatar-cotainer">
-            <img src="/images/image-avatar.png" alt="" id="ava" />
+            <img src="./images/image-avatar.png" alt="" id="avatar" />
           </div>
         </div>
       </div>
@@ -585,14 +225,14 @@
           >
             <a
               id="litebox"
-              href="/images/image-product-1.jpg"
+              href="./images/image-product-1.jpg"
               data-lightbox="shoes"
               data-title=""
             >
               <img
                 class="w-full xs:rounded-lg"
                 id="image"
-                src="/images/image-product-1.jpg"
+                src="./images/image-product-1.jpg"
                 alt="image-1"
               />
             </a>
@@ -639,7 +279,7 @@
             >
               <img
                 class="rounded-xl w-full h-full"
-                src="/images/image-product-1-thumbnail.jpg"
+                src="./images/image-product-1-thumbnail.jpg"
                 alt=""
               />
             </div>
@@ -650,7 +290,7 @@
             >
               <img
                 class="rounded-xl w-full h-full"
-                src="/images/image-product-2-thumbnail.jpg"
+                src="./images/image-product-2-thumbnail.jpg"
                 alt=""
               />
             </div>
@@ -661,7 +301,7 @@
             >
               <img
                 class="rounded-xl w-full h-full"
-                src="/images/image-product-3-thumbnail.jpg"
+                src="./images/image-product-3-thumbnail.jpg"
                 alt=""
               />
             </div>
@@ -672,7 +312,7 @@
             >
               <img
                 class="rounded-xl w-full h-full"
-                src="/images/image-product-4-thumbnail.jpg"
+                src="./images/image-product-4-thumbnail.jpg"
                 alt=""
               />
             </div>
